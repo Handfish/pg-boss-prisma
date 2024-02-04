@@ -1,0 +1,29 @@
+{
+  "name": "pg-boss-prisma",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup index.ts --format esm,cjs --dts --external react --external next --external events",
+    "dev": "tsup index.ts --format esm,cjs --watch --dts --external react --external next --external events",
+    "test": "tsx ./test.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.1",
+    "assert": "^2.1.0",
+    "pg-boss": "^9.0.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.196",
+    "@types/node": "^18.7.15",
+    "@types/uuid": "^9.0.4",
+    "eslint": "^8.26.0",
+    "eslint-config-next": "^13.0.2",
+    "prisma": "^4.16.1",
+    "tsup": "^8.0.1",
+    "tsx": "^3.13.0",
+    "typescript": "^4.8.4"
+  }
+}
